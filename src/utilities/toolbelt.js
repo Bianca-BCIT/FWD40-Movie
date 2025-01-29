@@ -7,4 +7,9 @@ function formatReleaseDate(releaseDate) {
     });
 }
 
-export { formatReleaseDate };
+
+function formatVoteAverage(voteAverage) {
+    return voteAverage.toFixed(1);
+}
+
+export { formatReleaseDate, formatVoteAverage };

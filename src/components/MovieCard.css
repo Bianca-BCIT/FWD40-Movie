@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+.movie-card {
+    position: relative;
+    width: 300px;
+    margin: 20px;
+    border: 1px solid black;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.overview {
+    width: 270px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.movie-title {
+    font-weight: 700;
+}
+
+.release-date {
+    font-weight: 400;
+}
+
+.vote-average {
+    font-weight: 400;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.movie-card-info {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background: rgba(0,0,0,0.7);
+    font-family: 'Roboto', sans-serif;
+    transition: opacity 0.2s;
+}
+
+.movie-card:hover .movie-card-info {
+    opacity: 1;
+}
+
+.favorite {
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    background: none;
+    padding: none;
+    border: none; 
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.favorite:hover{
+    background-color: #fff;
+}
+
+.see-more {
+    border-radius: 30px;
+    border: none;
+}
+
+.see-more:hover {
+    border: none;
+    background: #212B77;
+    color: #fff;
+}
