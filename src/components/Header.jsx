@@ -1,8 +1,11 @@
-import "./Header.css"
+
+import Banner from '../images/Banner.png';
+import '../components/Header.css';
+
 
 function Header() {
     return <header>
-        <h1>Movie App</h1>
+        <img className="banner" src={Banner} alt="White Bird Backdrop" />
     </header>
 }
 
