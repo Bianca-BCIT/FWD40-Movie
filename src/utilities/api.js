@@ -22,6 +22,7 @@ function getNowPlayingMovies() {
     };
     console.log("API_KEY:", API_KEY);
 
+
     return fetch
     ("https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1",
      options
@@ -118,3 +119,4 @@ function getTopRatedMovies() {
 }
 
 export { getNowPlayingMovies, getPopularMovies, getUpcomingMovies, getTopRatedMovies };
+

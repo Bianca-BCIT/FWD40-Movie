@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PageHome from "../pages/pageHome";
 import Header from "../components/Header";
-
+import Footer from "../components/Footer";
 function AppRouter() {
     return (
         <BrowserRouter>
@@ -9,6 +9,7 @@ function AppRouter() {
             <Routes>
                 <Route path="/" element={<PageHome />} />
             </Routes>
+            <Footer />
         </BrowserRouter>
     )
 }
