@@ -1,5 +1,7 @@
+
 import Banner from '../images/Banner.png';
 import '../components/Header.css';
+
 
 function Header() {
     return <header>
