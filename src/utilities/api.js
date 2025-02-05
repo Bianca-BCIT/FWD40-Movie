@@ -118,5 +118,29 @@ function getTopRatedMovies() {
   });
 }
 
-export { getNowPlayingMovies, getPopularMovies, getUpcomingMovies, getTopRatedMovies };
+function getMovieById(id) {
+  const options = {
+      method: 'GET',
+      headers: {
+        accept: 'application/json',
+        Authorization: `Bearer ${API_KEY}`,
+      },
+    };
+    return fetch
+    (`https://api.themoviedb.org/3/movie/${id}?language=en-US`,
+     options)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
+    .catch((error) => {
+      console.error("Error fetching movie details:", error);
+      throw error;
+    });
+  }
+
+
+export { getNowPlayingMovies, getPopularMovies, getUpcomingMovies, getTopRatedMovies, getMovieById };
 

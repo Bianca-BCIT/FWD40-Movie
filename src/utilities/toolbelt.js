@@ -12,4 +12,10 @@ function formatVoteAverage(voteAverage) {
     return voteAverage.toFixed(1);
 }
 
-export { formatReleaseDate, formatVoteAverage };
+function formatRuntime(runtime) {
+    const hours = Math.floor(runtime / 60);
+    const minutes = runtime % 60;
+    return `${hours}h ${minutes}m`;
+}
+
+export { formatReleaseDate, formatVoteAverage, formatRuntime };

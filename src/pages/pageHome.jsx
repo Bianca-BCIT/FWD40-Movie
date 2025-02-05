@@ -3,6 +3,7 @@ import "./PageHome.css";
 import {getNowPlayingMovies, getPopularMovies, getUpcomingMovies, getTopRatedMovies} from "../utilities/api";
 import MovieCard from "../components/MovieCard";
 import MovieNavigation from "../components/MovieNavigation";
+import Header from "../components/Header";
 
 function PageHome() {
     const [nowPlayingMovies, setNowPlayingMovies] = useState([]);
@@ -52,20 +53,23 @@ function PageHome() {
     };
 
     return (
-        <main id="home">
-            <MovieNavigation onTabChange={setSelectedTab} />
-                <section>
-                    <div className="movie-cards-container">
-                        {renderMovies().length > 0 ? (
-                            renderMovies().map((movieData) => (
-                                <MovieCard key={movieData.id} movieData={movieData} />
-                            ))
-                        ) : (
-                            <p>No movies available at the moment.</p>
-                        )}
-                    </div>
-                </section>
-        </main>
+        <>
+            <Header />
+            <main id="home">
+                <MovieNavigation onTabChange={setSelectedTab} />
+                    <section>
+                        <div className="movie-cards-container">
+                            {renderMovies().length > 0 ? (
+                                renderMovies().map((movieData) => (
+                                    <MovieCard key={movieData.id} movieData={movieData} />
+                                ))
+                            ) : (
+                                <p>No movies available at the moment.</p>
+                            )}
+                        </div>
+                    </section>
+            </main>
+        </>
     )
 }
 
