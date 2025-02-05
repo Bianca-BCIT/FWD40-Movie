@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { getMovieById } from "../utilities/api";
 import { TMDB_IMAGE_BASE_URL } from "../globals/globals";
 import { formatReleaseDate, formatRuntime, formatVoteAverage } from "../utilities/toolbelt";
-import FavoriteButton from "../components/FavoriteButton";
 
 function PageMovie() {
     const [movieData, setMovieData] = useState(null);
