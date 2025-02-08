@@ -14,7 +14,7 @@ function getInitialStateFromLocalStorage() {
 
 function GlobalProvider(Children) {
 
-    const [favorites, setfavorites] = useState([]);
+    const [favorites, setfavorites] = useState([getInitialStateFromLocalStorage]);
 
     useEffect(() => {
 
@@ -28,7 +28,10 @@ function GlobalProvider(Children) {
     //remove fav function
     function removeFavorite(movie) {
 
-        const newFavorites = favorites.filter((fav) => fav.id !== movie.id);
+        const newFavorites = favorites.filter((fav) => {
+
+            return fav.id !== movie.id;
+        });
         // pulling the movie with uneual id and store it in a variable, then update the state 
         setfavorites(newFavorites);
 
@@ -36,6 +39,7 @@ function GlobalProvider(Children) {
 
     //add fav 
     function addFavorite(movie) {
+        // get copy of old array, and add movie to it 
         setfavorites([...favorites, movie]);
     }
 
