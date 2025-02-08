@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PageMovie from "../pages/PageMovie";
 import pageFavorites from "../pages/pageFavorites";
+import { GlobalProvider } from "../context/GlobalContext";
 
 function AppRouter() {
     return (
