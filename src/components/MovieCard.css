@@ -7,6 +7,7 @@
     border: 1px solid black;
     overflow: hidden;
     transition: transform 0.2s;
+    cursor: pointer;
 }
 
 .overview {
@@ -42,7 +43,7 @@
     width: 100%;
     padding: 10px;
     color: white;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     font-family: 'Roboto', sans-serif;
     transition: opacity 0.2s;
 }
@@ -57,12 +58,12 @@
     left: 5px;
     background: none;
     padding: none;
-    border: none; 
+    border: none;
     font-size: 20px;
     cursor: pointer;
 }
 
-.favorite:hover{
+.favorite:hover {
     background-color: #fff;
 }
 
