@@ -9,12 +9,14 @@ import { GlobalProvider } from "../context/GlobalContext";
 function AppRouter() {
     return (
         <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<PageHome />} />
-                <Route path="/movie/:id" element={<PageMovie />} />
-                <Route path="/favorites" element={<pageFavorites />} />
-            </Routes>
-            <Footer />
+            <GlobalProvider>
+                <Routes>
+                    <Route path="/" element={<PageHome />} />
+                    <Route path="/movie/:id" element={<PageMovie />} />
+                    <Route path="/favorites" element={<pageFavorites />} />
+                </Routes>
+                <Footer />
+            </GlobalProvider>
         </BrowserRouter>
     )
 }
