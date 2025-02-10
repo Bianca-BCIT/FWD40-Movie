@@ -12,13 +12,13 @@ function getInitialStateFromLocalStorage() {
 
 }
 
-function GlobalProvider(Children) {
+function GlobalProvider({ Children }) {
 
-    const [favorites, setfavorites] = useState([getInitialStateFromLocalStorage]);
+    const [favorites, setfavorites] = useState(getInitialStateFromLocalStorage());
 
     useEffect(() => {
 
-        //evertime local storage changes we update favortes with stringify version of lates copy of favorites. 
+        //evertime local storage changes we update favortes with stringify version of latest copy of favorites. 
 
         localStorage.setItem("favorites", JSON.stringify(favorites));
     }, [favorites]);
