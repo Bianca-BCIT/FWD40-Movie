@@ -2,7 +2,7 @@ import { useContext } from "react";
 import "./FavoriteButton.css";
 import { GlobalContext } from "../context/GlobalContext";
 
-function FavoriteButton(movieData) {
+function FavoriteButton({ movieData }) {
     const { favorites, addFavorite, removeFavorite } = useContext(GlobalContext);
     //check if movie already in favorites 
     const isFavorite = favorites.find((fav) => fav.id === movieData.id);
