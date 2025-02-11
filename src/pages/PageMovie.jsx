@@ -39,12 +39,12 @@ function PageMovie() {
                     />
 
                     <h2 className="page-movie-title">{movieData.title}</h2>
-                    <FavoriteButton movieData={movieData} />
                     <h3 className="page-movie-release-date">{formatReleaseDate(movieData.release_date)}</h3>
                     <h3 className="page-movie-runtime">{formatRuntime(movieData.runtime)}</h3>
                     <p className="page-movie-overview">{movieData.overview}</p>
                     <p className="page-movie-rating">{formatVoteAverage(movieData.vote_average)}</p>
                     {/* <button className="page-movie-favorite-btn">🩷</button> */}
+                    <FavoriteButton movieData={movieData} className="page-movie-favorite-btn" />
                 </div>
             )}
         </main>

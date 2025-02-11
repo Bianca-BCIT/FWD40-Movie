@@ -11,7 +11,6 @@ function PageFavorites() {
 
     return (
         <main id="favorites">
-            <h2>Favorites</h2>
             {/* map over them and display movie cards */}
             <div className="favorites-container">
                 {favorites.map((movie) => {
