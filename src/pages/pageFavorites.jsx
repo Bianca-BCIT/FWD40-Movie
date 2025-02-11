@@ -9,19 +9,20 @@ function PageFavorites() {
 
     const { favorites } = useContext(GlobalContext);
 
-    return <main id="favorites">
-        <h2>Favorites</h2>
-        {/* map over them and display movie cards */}
-        <div className="favorites-container">
-            {favorites.map((movie) => {
+    return (
+        <main id="favorites">
+            <h2>Favorites</h2>
+            {/* map over them and display movie cards */}
+            <div className="favorites-container">
+                {favorites.map((movie) => {
 
-                return <MovieCard key={movie.id} movieData={movie} />;
+                    return <MovieCard key={movie.id} movieData={movie} />;
 
-            })}
-        </div>
+                })}
+            </div>
 
-    </main>
-
+        </main>
+    );
 
 }
 

@@ -16,6 +16,8 @@ function GlobalProvider({ Children }) {
 
     const [favorites, setfavorites] = useState(getInitialStateFromLocalStorage());
 
+
+    // use effect detect changes in favorites and update local storage 
     useEffect(() => {
 
         //evertime local storage changes we update favortes with stringify version of latest copy of favorites. 
