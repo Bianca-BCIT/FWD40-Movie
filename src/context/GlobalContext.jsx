@@ -12,7 +12,7 @@ function getInitialStateFromLocalStorage() {
 
 }
 
-function GlobalProvider({ Children }) {
+function GlobalProvider({ children }) {
 
     const [favorites, setfavorites] = useState(getInitialStateFromLocalStorage());
 
@@ -50,7 +50,7 @@ function GlobalProvider({ Children }) {
     return (
 
         <GlobalContext.Provider value={{ favorites, removeFavorite, addFavorite }}>
-            {Children}
+            {children}
         </GlobalContext.Provider>
 
 
