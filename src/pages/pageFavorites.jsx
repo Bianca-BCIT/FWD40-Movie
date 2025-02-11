@@ -6,23 +6,22 @@ import MovieCard from "../components/MovieCard";
 function PageFavorites() {
 
     // retrieve our favorites from global context
-
     const { favorites } = useContext(GlobalContext);
 
     return (
         <main id="favorites">
-            {/* map over them and display movie cards */}
+            {/* Check if favorites list is empty */}
             <div className="favorites-container">
-                {favorites.map((movie) => {
-
-                    return <MovieCard key={movie.id} movieData={movie} />;
-
-                })}
+                {favorites.length === 0 ? (
+                    <p className="no-favorites-message">You do not have any favorite movies.</p>
+                ) : (
+                    favorites.map((movie) => {
+                        return <MovieCard key={movie.id} movieData={movie} />;
+                    })
+                )}
             </div>
-
         </main>
     );
-
 }
 
-export default PageFavorites; 
+export default PageFavorites;
