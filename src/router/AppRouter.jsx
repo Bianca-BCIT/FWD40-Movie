@@ -3,7 +3,7 @@ import PageHome from "../pages/pageHome";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PageMovie from "../pages/PageMovie";
-import pageFavorites from "../pages/pageFavorites";
+import PageFavorites from "../pages/pageFavorites";
 import { GlobalProvider } from "../context/GlobalContext";
 
 function AppRouter() {
@@ -14,7 +14,7 @@ function AppRouter() {
                 <Routes>
                     <Route path="/" element={<PageHome />} />
                     <Route path="/movie/:id" element={<PageMovie />} />
-                    <Route path="/favorites" element={<pageFavorites />} />
+                    <Route path="/favorites" element={<PageFavorites />} />
                 </Routes>
                 <Footer />
             </GlobalProvider>
@@ -22,4 +22,4 @@ function AppRouter() {
     )
 }
 
-export default AppRouter
+export default AppRouter;

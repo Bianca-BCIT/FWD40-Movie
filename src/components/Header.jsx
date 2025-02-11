@@ -1,4 +1,5 @@
 
+import "./Header.css";
 import Banner from '../images/Banner.png';
 import '../components/Header.css';
 import { Link } from 'react-router-dom';
@@ -20,4 +21,4 @@ function Header() {
     </header>
 }
 
-export default Header
+export default Header;
