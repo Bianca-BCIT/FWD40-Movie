@@ -10,7 +10,7 @@ function PageFavorites() {
 
     return (
         <main id="favorites">
-            <h2> Favourites</h2>
+            <h2 className="favorites-tittle"> FAVOURITES</h2>
             {/* Check if favorites list is empty */}
             <div className="favorites-container">
                 {favorites.length === 0 ? (
