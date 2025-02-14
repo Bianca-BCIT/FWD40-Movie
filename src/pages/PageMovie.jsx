@@ -43,7 +43,7 @@ function PageMovie() {
                     <h3 className="page-movie-runtime">{formatRuntime(movieData.runtime)}</h3>
                     <p className="page-movie-overview">{movieData.overview}</p>
                     <p className="page-movie-rating">{formatVoteAverage(movieData.vote_average)}</p>
-                    <FavoriteButton movieData={movieData} className="page-movie-favorite-btn" />
+                    <FavoriteButton movieData={movieData} />
                 </div>
             )}
         </main>
