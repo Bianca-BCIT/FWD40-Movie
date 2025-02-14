@@ -42,6 +42,9 @@ function GlobalProvider({ children }) {
     //add fav 
     function addFavorite(movie) {
         // get copy of old array, and add movie to it 
+        if (movie === null) {
+            return;
+        }
         setfavorites([...favorites, movie]);
     }
 
