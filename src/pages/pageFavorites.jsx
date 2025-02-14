@@ -2,6 +2,8 @@ import { useContext } from "react";
 import "./PageFavorites.css";
 import { GlobalContext } from "../context/GlobalContext";
 import MovieCard from "../components/MovieCard";
+// import Header from "../components/Header";
+
 
 function PageFavorites() {
 

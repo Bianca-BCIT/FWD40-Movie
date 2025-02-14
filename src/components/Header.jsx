@@ -7,16 +7,6 @@ import { Link } from 'react-router-dom';
 
 function Header() {
     return <header>
-        <nav>
-            <ul>
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="/favorites">Favorites</Link>
-                </li>
-            </ul>
-        </nav>
         <img className="banner" src={Banner} alt="White Bird Backdrop" />
     </header>
 }
