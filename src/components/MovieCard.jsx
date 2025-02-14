@@ -13,7 +13,7 @@ function MovieCard({ movieData }) {
 
     return (
         <div onClick={handleLinkClick} className="movie-card">
-            {/* // <Link to={`/movie/${movieData.id}`}> */}
+            {/* <Link to={`/movie/${movieData.id}`}> */}
 
             <img src={`${TMDB_IMAGE_BASE_URL}/w300/${movieData.poster_path}`}
                 alt={`${movieData.title} poster`} />
@@ -23,7 +23,7 @@ function MovieCard({ movieData }) {
                 <p className="overview">{movieData.overview}</p>
                 <p className="vote-average">{formatVoteAverage(movieData.vote_average)}</p>
                 <button className="see-more">See More</button>
-                <FavoriteButton movieData={movieData} />
+                <FavoriteButton className="see-more" movieData={movieData} />
             </div>
 
         </div>

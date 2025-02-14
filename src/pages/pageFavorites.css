@@ -1,8 +1,41 @@
-.favorites-container {
+#favorites {
+    padding: 20px;
+    min-height: 100vh;
+    color: white;
+    background-image: url('../images/cinema.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
 
+.favorites-tittle {
+    margin-top: 10vh;
+    font-size: 3rem;
+    color: white;
+}
+
+.favorites-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.no-favorites-message {
+    font-size: 1.5rem;
+    color: #888;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
 }

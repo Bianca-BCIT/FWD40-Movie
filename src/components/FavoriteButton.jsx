@@ -5,7 +5,12 @@ import { GlobalContext } from "../context/GlobalContext";
 function FavoriteButton({ movieData }) {
     const { favorites, addFavorite, removeFavorite } = useContext(GlobalContext);
     //check if movie already in favorites 
+    // console.log(movieData.id);
+    // const isFavorite = false;
     const isFavorite = favorites.find((fav) => fav.id === movieData.id);
+    // const isFavorite = Array.isArray(favorites) && favorites.find((fav) => fav.id === movieData.id);
+    // function to handle the click event on the fav button
+
 
 
     function handleFavorite(event) {
