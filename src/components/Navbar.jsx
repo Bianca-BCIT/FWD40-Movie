@@ -11,13 +11,13 @@ function Navbar() {
             <h2> CinematicWonders</h2>
             <ul className="navbar-ul">
                 <li>
-                    <Link to="/">Home</Link>
+                    <Link to="/">HOME</Link>
                 </li>
                 <li>
-                    <Link to="/about"> About</Link>
+                    <Link to="/about"> ABOUT</Link>
                 </li>
                 <li>
-                    <Link to="/favorites">Favorites</Link>
+                    <Link to="/favorites">FAVOURITES</Link>
                 </li>
             </ul>
         </nav>
