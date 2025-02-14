@@ -10,10 +10,11 @@ function PageFavorites() {
 
     return (
         <main id="favorites">
+            <h2> Favourites</h2>
             {/* Check if favorites list is empty */}
             <div className="favorites-container">
                 {favorites.length === 0 ? (
-                    <p className="no-favorites-message">You do not have any favorite movies.</p>
+                    <p className="no-favorites-message">Sorry you have no favourite movies.Return to the home page to add a favourite movie</p>
                 ) : (
                     favorites.map((movie) => {
                         return <MovieCard key={movie.id} movieData={movie} />;
