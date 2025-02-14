@@ -27,7 +27,7 @@ function FavoriteButton({ movieData }) {
 
     // the fav button need to know whether the current movie it is connected to, its already in favorites or not.
 
-    return <button onClick={handleFavorite}>{isFavorite ? "❤️ " : "🤍"}</button>
+    return <button className="favorite-button" onClick={handleFavorite}>{isFavorite ? "❤️ " : "🤍"}</button>
 }
 
 
