@@ -11,8 +11,20 @@ body {
     right: 0;
     width: 100%;
     z-index: 100;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+
 }
 
+.navbar h2 {
+    color: white;
+    font-size: 22px;
+    margin: 0;
+    margin-left: 70px;
+
+}
 
 .navbar-ul {
     list-style: none;
@@ -23,20 +35,17 @@ body {
     align-items: center;
 }
 
-
 .navbar li {
-    margin-left: 50px;
-
+    margin-left: 80px;
 }
 
 a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
 }
 
 a:hover {
     color: #ff6347;
-
 }
