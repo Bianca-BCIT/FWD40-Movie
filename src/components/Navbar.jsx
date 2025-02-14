@@ -5,8 +5,8 @@ import '../components/Header.css';
 import { Link } from 'react-router-dom';
 
 
-function Header() {
-    return <header>
+function Navbar() {
+    return (
         <nav>
             <ul>
                 <li>
@@ -20,8 +20,11 @@ function Header() {
                 </li>
             </ul>
         </nav>
-        <img className="banner" src={Banner} alt="White Bird Backdrop" />
-    </header>
+
+    )
+
+
+
 }
 
-export default Header;
+export default Navbar;

@@ -3,6 +3,7 @@ import "./PageFavorites.css";
 import { GlobalContext } from "../context/GlobalContext";
 import MovieCard from "../components/MovieCard";
 // import Header from "../components/Header";
+import Navbar from "../components/Navbar";
 
 
 function PageFavorites() {
@@ -12,6 +13,7 @@ function PageFavorites() {
 
     return (
         <main id="favorites">
+            <Navbar />
             <h2 className="favorites-tittle"> FAVOURITES</h2>
             {/* Check if favorites list is empty */}
             <div className="favorites-container">
