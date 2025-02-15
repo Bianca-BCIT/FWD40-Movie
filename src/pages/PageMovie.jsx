@@ -37,13 +37,12 @@ function PageMovie() {
                         src={`${TMDB_IMAGE_BASE_URL}/w500${movieData.poster_path}`}
                         alt={movieData.title}
                     />
-
-                    <h2 className="page-movie-title">{movieData.title}</h2>
-                    <h3 className="page-movie-release-date">{formatReleaseDate(movieData.release_date)}</h3>
-                    <h3 className="page-movie-runtime">{formatRuntime(movieData.runtime)}</h3>
-                    <p className="page-movie-overview">{movieData.overview}</p>
-                    <p className="page-movie-rating">{formatVoteAverage(movieData.vote_average)}</p>
-                    <FavoriteButton movieData={movieData} />
+                        <h2 className="page-movie-title">{movieData.title}</h2>
+                        <h3 className="page-movie-release-date">{formatReleaseDate(movieData.release_date)}</h3>
+                        <h3 className="page-movie-runtime">{formatRuntime(movieData.runtime)}</h3>
+                        <p className="page-movie-overview">{movieData.overview}</p>
+                        <p className="page-movie-rating">{formatVoteAverage(movieData.vote_average)}</p>
+                        <FavoriteButton movieData={movieData} />
                 </div>
             )}
         </main>

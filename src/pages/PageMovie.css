@@ -1,14 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 #single-movie {
     display: flex;
     justify-content: center;
     padding: 1.5rem;
     background-color: #111;
     color: white;
+    height: 130vh;
 }
 
 .movie-container {
     width: 100%;
-    max-width: 60em;}
+    max-width: 60em;
+}
 
 /* Backdrop Image */
 .movie-backdrop {
@@ -38,8 +42,10 @@
 /* Movie Title */
 .page-movie-title {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 300;
     margin-top: 6rem;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 40px;
 }
 
 /* Meta Info */
@@ -50,6 +56,13 @@
     font-weight: 400;
     color: #bbb;
     margin: 0.3rem 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.page-movie-rating{
+    position: absolute;
+    top: 890px;
+    left: 260px;
 }
 
 /* Overview */
@@ -57,6 +70,10 @@
     font-size: 1rem;
     line-height: 1.5;
     text-align: justify;
+    position: absolute;
+    top: 730px;
+    left: 260px;
+    font-family: 'Roboto', sans-serif;
 }
 
 @media (min-width: 64em) {
