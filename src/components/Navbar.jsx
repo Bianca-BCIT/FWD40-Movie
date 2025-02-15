@@ -1,6 +1,6 @@
 
 import "./Navbar.css";
-import Banner from '../images/Banner.png';
+import Banner from '../images/Banner.jpg';
 import '../components/Header.css';
 import { Link } from 'react-router-dom';
 

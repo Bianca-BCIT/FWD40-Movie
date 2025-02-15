@@ -2,5 +2,9 @@ body {
   margin: 0;
 }
 
-
-
+@font-face {
+  font-family: 'La Fleur';
+  src: url('/assets/fonts/la-fleur.ttf') format('truetype'); /* Adjust path if needed */
+  font-weight: normal;
+  font-style: normal;
+}
