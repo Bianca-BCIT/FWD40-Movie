@@ -11,9 +11,12 @@
 }
 
 .overview {
-    width: 270px;
+    width: 50%;
     font-size: 12px;
     font-weight: 300;
+    position: absolute;
+    top: 130px;
+    left: 20px;
 }
 
 .movie-title {
@@ -22,10 +25,16 @@
 
 .release-date {
     font-weight: 400;
+    position: absolute;
+    top: 60px;
+    left: 20px;
 }
 
 .vote-average {
     font-weight: 400;
+    position: absolute;
+    top: 270px;
+    left: 30px;
 }
 
 .movie-card img {
@@ -41,11 +50,21 @@
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
     padding: 10px;
     color: white;
     background: rgba(0, 0, 0, 0.7);
     font-family: 'Roboto', sans-serif;
-    transition: opacity 0.2s;
+    transition: opacity 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    text-align: left;
+    gap: 8px;
+}
+
+.movie-card-info > * {
+    width: 100%; 
 }
 
 .movie-card:hover .movie-card-info {
@@ -53,9 +72,9 @@
 }
 
 .favorite {
-    position: absolute;
-    bottom: 10px;
-    left: 5px;
+    position: absolute; 
+    top: 0px;
+    left: 5px; 
     background: none;
     padding: none;
     border: none;
@@ -72,6 +91,8 @@
     border: none;
     width: 120px;
     height: 40px;
+    position: absolute;
+    top: 240px;
 }
 
 .see-more:hover {

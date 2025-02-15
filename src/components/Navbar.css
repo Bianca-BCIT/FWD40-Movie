@@ -22,10 +22,13 @@ body {
 
 .navbar h2 {
     color: white;
-    font-size: 24px;
     margin: 0;
     margin-left: 70px;
+}
+
+.navbar h2 a {
     font-family: 'La Fleur', sans-serif;
+    font-size: 24px;
 }
 
 .navbar-ul {
@@ -37,7 +40,7 @@ body {
     align-items: center;
 }
 
-.navbar li {
+.navbar-ul li {
     margin-left: 80px;
 }
 
@@ -52,4 +55,48 @@ a {
 a:hover {
     text-decoration: underline;
     color: white;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar-ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        left: 10px;
+        background: black;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .navbar-ul.open {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-ul li {
+        margin: 10px 0;
+        justify-content: center;
+        align-items: center;
+    }
 }
