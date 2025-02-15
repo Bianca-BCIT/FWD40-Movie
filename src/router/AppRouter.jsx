@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PageHome from "../pages/pageHome";
+import PageAbout from "../pages/PageAbout";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PageMovie from "../pages/PageMovie";
@@ -15,6 +16,7 @@ function AppRouter() {
                 <Navbar />
                 <Routes>
                     <Route path="/" element={<PageHome />} />
+                    <Route path="/about" element={<PageAbout />} />
                     <Route path="/movie/:id" element={<PageMovie />} />
                     <Route path="/favorites" element={<PageFavorites />} />
                 </Routes>
