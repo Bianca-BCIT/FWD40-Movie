@@ -55,7 +55,6 @@ function PageHome() {
 
     return (
         <>
-            <Navbar />
             <Header />
             <main id="home">
                 <MovieNavigation onTabChange={setSelectedTab} />
