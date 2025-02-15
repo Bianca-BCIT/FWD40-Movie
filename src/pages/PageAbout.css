@@ -1,0 +1,19 @@
+#about {
+    padding: 20px;
+    min-height: 100vh;
+    color: white;
+    background-image: url('../images/cinema.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.about-title {
+    margin-top: 10vh;
+    font-size: 3rem;
+    color: white;
+}
