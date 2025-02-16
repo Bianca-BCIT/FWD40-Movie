@@ -1,3 +1,4 @@
+import { APP_FOLDER_NAME } from "../globals/globals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PageHome from "../pages/pageHome";
 import PageAbout from "../pages/PageAbout";
@@ -10,7 +11,7 @@ import Navbar from "../components/Navbar";
 
 function AppRouter() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={`/${APP_FOLDER_NAME}`}>
             <GlobalProvider>
                 {/* <header /> */}
                 <Navbar />
