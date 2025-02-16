@@ -6,7 +6,6 @@
     padding: 1.5rem;
     background-color: #111;
     color: white;
-    height: 130vh;
 }
 
 .movie-container {
@@ -43,7 +42,7 @@
 .page-movie-title {
     font-size: 1.5rem;
     font-weight: 300;
-    margin-top: 6rem;
+    margin-top: 3rem;
     font-family: 'Roboto', sans-serif;
     padding-top: 40px;
 }
@@ -59,20 +58,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.page-movie-rating{
-    position: absolute;
-    top: 890px;
-    left: 260px;
-}
-
 /* Overview */
 .page-movie-overview {
     font-size: 1rem;
     line-height: 1.5;
     text-align: justify;
-    position: absolute;
-    top: 730px;
-    left: 260px;
     font-family: 'Roboto', sans-serif;
 }
 
