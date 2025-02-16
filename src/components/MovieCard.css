@@ -3,6 +3,7 @@
 .movie-card {
     position: relative;
     width: 300px;
+    height: 500px;
     margin: 20px;
     border: 1px solid black;
     overflow: hidden;
@@ -11,12 +12,13 @@
 }
 
 .overview {
-    width: 50%;
+    width: 40%;
     font-size: 12px;
     font-weight: 300;
     position: absolute;
-    top: 130px;
-    left: 20px;
+    top: 120px;
+    left: 20px; 
+    left: 0px;
 }
 
 .movie-title {
@@ -33,8 +35,9 @@
 .vote-average {
     font-weight: 400;
     position: absolute;
-    top: 270px;
-    left: 30px;
+   /* top: 270px; */
+    bottom: 50px;
+    left: 0px;
 }
 
 .movie-card img {
@@ -50,8 +53,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    padding: 10px;
+   /* height: 100%; */
+    height: 450px;
+   /* padding: 10px; */
     color: white;
     background: rgba(0, 0, 0, 0.7);
     font-family: 'Roboto', sans-serif;
@@ -71,10 +75,11 @@
     opacity: 1;
 }
 
-.favorite {
-    position: absolute; 
-    top: 0px;
-    left: 5px; 
+/*favorite{
+    position: absolute;
+    width: 50px;
+    top: 320px;
+    left: 10px; 
     background: none;
     padding: none;
     border: none;
@@ -85,14 +90,16 @@
 .favorite:hover {
     background-color: #fff;
 }
-
+*/
 .see-more {
     border-radius: 30px;
     border: none;
     width: 120px;
     height: 40px;
     position: absolute;
-    top: 240px;
+   /* top: 240px; */
+    bottom: 50px;
+    left: 45px;
 }
 
 .see-more:hover {

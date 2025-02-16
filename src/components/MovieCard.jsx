@@ -9,7 +9,7 @@ function MovieCard({ movieData }) {
     function handleLinkClick(event) {
         navigate(`/movie/${movieData.id}`);
 
-    }
+    }   
 
     return (
         <div onClick={handleLinkClick} className="movie-card">
@@ -24,7 +24,7 @@ function MovieCard({ movieData }) {
                 <p className="vote-average">{formatVoteAverage(movieData.vote_average)}</p>
                 <button className="see-more">See More</button>
             </div>
-            <FavoriteButton className="favorite" movieData={movieData} />
+                <FavoriteButton className="favorite" movieData={movieData} />
         </div>
         // </Link >
     );
