@@ -11,30 +11,34 @@
 }
 
 .overview {
-    width: 50%;
-    font-size: 12px;
+    max-width: 80%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 10px;
     font-weight: 300;
     position: absolute;
     top: 130px;
-    left: 1px;
+    left: 9px;
 }
 
 .movie-title {
     font-weight: 700;
+    position: absolute;
+    left: 9px;
 }
 
 .release-date {
     font-weight: 400;
     position: absolute;
     top: 75px;
-    left: 1px;
+    left: 9px;
 }
 
 .vote-average {
     font-weight: 400;
     position: absolute;
     bottom: 50px;
-    left: 5px;
+    left: 15px;
 }
 
 .movie-card img {
