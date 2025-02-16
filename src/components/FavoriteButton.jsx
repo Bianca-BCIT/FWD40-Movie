@@ -2,7 +2,7 @@ import { useContext } from "react";
 import "./FavoriteButton.css";
 import { GlobalContext } from "../context/GlobalContext";
 
-function FavoriteButton({ movieData }) {
+function FavoriteButton({ movieData, className = ""}) {
     const { favorites, addFavorite, removeFavorite } = useContext(GlobalContext);
     //check if movie already in favorites 
     // console.log(movieData.id);
@@ -27,7 +27,7 @@ function FavoriteButton({ movieData }) {
 
     // the fav button need to know whether the current movie it is connected to, its already in favorites or not.
 
-    return <button className="favorite-button" onClick={handleFavorite}>{isFavorite ? "❤️ " : "🤍"}</button>
+    return <button className={`favorite-button ${className}`} onClick={handleFavorite}>{isFavorite ? "❤️ " : "🤍"}</button>
 }
 
 

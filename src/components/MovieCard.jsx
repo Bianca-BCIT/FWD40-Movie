@@ -24,7 +24,7 @@ function MovieCard({ movieData }) {
                 <p className="vote-average">{formatVoteAverage(movieData.vote_average)}</p>
                 <button className="see-more">See More</button>
             </div>
-            <FavoriteButton movieData={movieData} />
+            <FavoriteButton className="top-right" movieData={movieData} />
         </div>
         // </Link >
     );
