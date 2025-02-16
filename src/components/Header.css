@@ -16,7 +16,7 @@ h1 {
     padding-left: 60px;
 }
 
-p {
+.header-p {
     position: absolute;
     top: 55%;
     left: 65px;
