@@ -15,22 +15,31 @@
 
 .about-title {
     margin-top: 120px;
-    font-size: 5rem;
+    font-size: 3rem;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
 
-p {
-    padding: 0;
+.about-p {
+    line-height: 1.7;
+    margin: 0.75rem 0;
     font-family: 'Roboto', sans-serif;
+}
+
+.tmdb-logo {
+    width: 120px;
+    margin-top: 1.5rem;
+
 }
 
 @media (max-width: 600px) {
     .about-p {
-        position: absolute;
-        top: 250px;
-        left: 30px;
-        width: 260px;
+        line-height: 1.6;
+    }
+
+    .tmdb-logo {
+        width: 100px;
+        margin-top: 1rem;
     }
 }
