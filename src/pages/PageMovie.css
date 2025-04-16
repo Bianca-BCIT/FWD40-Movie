@@ -6,12 +6,13 @@
     padding: 1.5rem;
     background-color: #111;
     color: white;
-    height: 900px;
+    min-height: 100vh;
 }
 
 .movie-container {
     width: 100%;
     max-width: 60em;
+    position: relative;
 }
 
 /* Backdrop Image */
@@ -70,7 +71,6 @@
 @media (min-width: 64em) {
     .movie-poster {
         width: 14em;
-        top: 50%;
     }
 
     .page-movie-title {
